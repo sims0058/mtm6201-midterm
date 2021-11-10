@@ -50,13 +50,17 @@ table {
 /* CSS RESET END */
 
 html{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Aileron Black', sans-serif;
 	font-size: 14px;
 	box-sizing: border-box;
-}
+	color:black;
+	}
 
 body {
 	line-height: 1.5;
+	background-color: rgb(246, 236, 236);
+	margin: 0 auto;
+    width: 1200px;
   }
   
   *,
@@ -74,7 +78,296 @@ body {
   nav ul li a,
   nav ul li a:link,
   nav ul li a:visited {
-	color: #c78c06;
+	color: #b569e7;
+  }
+
+
+/* Header and text style */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1em 0;
+}
+
+#services h3{
+	text-align: center;
+}
+
+#promem h3{
+	color: white;
+}
+
+.footer p{
+	color: white;
+	text-transform: uppercase;
+}
+
+.footer a{
+	color: white;
+}
+
+.socialicons{
+	color: white;
+}
+
+/* Header and text style */
+
+
+
+/* HEADER */
+
+.top{
+background-color: black;
+height: 180px;
+}
+
+.nav{
+	background-color: black;
+	text-align:center;
+	margin-top: 15px;
+	margin-bottom: 0px;
+
+
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	padding: 10px;
+	
+}
+
+nav ul li{
+	flex: 1;
+}
+
+
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
+	color:white;
   }
 
   
+  a:hover,
+  a:focus {
+	color: pink;
+  }
+  
+  nav ul a{
+	  text-decoration: none;
+	  color: #222;
+  }
+	/* banner*/
+
+	.banner{
+		background: rgb(0, 0, 0) url("images/homebanner.jpg") no-repeat;
+		background-size: cover;
+		align-content: center;
+		height: 300px;
+		width: auto;
+	}
+	.bannercontent{
+		height: 300px;
+		width: 1000px;
+		align-content: center;
+		margin: 30px;
+		padding: 20px;
+		color: white;
+	}
+		
+	.topcontent {
+	
+		background-color: rgb(224, 202, 192);
+		
+		}
+
+	
+	/* banner*/
+
+/* HEADER */
+
+/* BUTTON */
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 8px;
+  color: black;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+	
+  }
+  
+  .btn:hover,
+  .btn:focus {
+	background-color: rgb(194, 122, 216);
+	border: 2px solid rgb(94, 10, 128);
+	color: inherit;
+  }
+
+/* BUTTON */
+
+/* SERVICES BOXES */
+
+	.box{
+	box-sizing: border-box;
+	background-color:rgb(224, 202, 192);
+	padding: 20px;
+	}
+
+
+
+#services img{
+	float: left;
+}
+
+#services{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4);
+	}
+
+	
+	  .nailimage {
+		grid-area: one;
+	  }
+	  .nailbox{
+		grid-area: two;
+	  }
+	  .handfeetimage{
+		grid-area: tree;
+	  }
+	  .handfeetbox{
+		grid-area: four;
+	  }
+	  .waxingimage{
+		grid-area: five;
+	  }
+	  .waxingbox{
+		grid-area: six;
+	  }
+	  .lashimage{
+		grid-area: seven;
+	  }
+	  .lashbox{
+		grid-area: eight;
+	  }
+
+	  #services{
+		grid-template-areas: "two one"
+							 "tree four"
+							 "six five"
+							 "seven eight"
+							
+		}
+		
+		
+	/* SERVICES BOXES */
+
+	/* Special Packages */
+
+		#special{
+			background: rgb(0, 0, 0) url("images/special.jpeg") no-repeat;
+			background-size:cover;
+			align-content: center;
+			height: 300px;
+			width: auto;
+			padding: 20px;
+
+			/* Promotion Membership */
+		}
+			#promem{
+				background-color: rgb(79, 152, 125);
+				width: 100%;
+				height: auto;
+				display: grid;
+				grid-template-columns: repeat(1, 2fr);
+				grid-template-rows: repeat(2);
+				justify-content: center;
+				align-content: center;
+				}
+			
+				
+				  .promotionstext {
+					grid-area: one;
+				  }
+				  .icon1{
+					grid-area: two;
+				  }
+				  .membershiptext{
+					grid-area: tree;
+				  }
+				  .icon2{
+					grid-area: four;
+				  }
+
+				  #promem{
+					grid-template-areas: "one tree"
+										 "two four"
+										}
+
+/* Hours Contact */
+
+#hcinfo{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2);
+	}
+	
+	.hours {
+	  grid-area: hours;
+	 
+	}
+	.contact {
+		grid-area: message;  
+	  }
+	
+	
+	#hcinfo{
+	grid-template-areas: "hours message"
+						
+	}
+	
+
+/* FOOTER */
+
+.footer{
+	background-color: black;
+	display: flex;
+	padding: 15px;
+}
