@@ -137,9 +137,7 @@ table {
 /* CSS RESET END */
 
 html {
-	font-family: aileron, sans-serif;
-	font-weight: 100;
-	font-style: normal;
+	font-family: 'Aileron Black', sans-serif;
 	font-size: 22px;
 	box-sizing: border-box;
 	color: black;
@@ -240,10 +238,7 @@ nav a {
 	font-size: 1.2rem;
 }
 
-i{
-	padding-left: 5px;
-	padding-right: 5px;
-}
+
 /* Header and text style */
 
 
@@ -359,8 +354,8 @@ input {
 
 }
 
-.book-button:hover {
-	transform: scaleY(1.2);
+.book-button:hover{
+transform: scaleY(1.2);
 }
 
 .bannercontent {
@@ -413,7 +408,6 @@ input {
 img {
 	width: 100%;
 }
-
 
 .servicescontent {
 
@@ -538,9 +532,8 @@ img {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(1);
-	text-align:center;
+	text-align: start;
 	padding-left: 25px;
-
 }
 
 .hours {
@@ -576,7 +569,7 @@ img {
 
 
 /* -------------------------------
-     	 Desktop Style
+      Desktop Style
 ---------------------------------- */
 @media screen and (min-width: 760px) {
 	html {
@@ -682,11 +675,3 @@ img {
 		grid-template-areas: "hours message"
 
 	}
-
-
-/* -------------------------------
-    		 Mobile Style
----------------------------------- */
-
-	/* Footer */
-	
