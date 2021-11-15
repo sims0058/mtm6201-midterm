@@ -177,7 +177,7 @@ nav a:hover {
 	transition: all 0.2s ease-out;
 }
 
-/* Header and text style */
+/* text */
 
 h1,
 h2,
@@ -245,7 +245,7 @@ i {
 	padding-right: 5px;
 }
 
-/* Header and text style */
+/* text */
 
 
 
@@ -533,7 +533,6 @@ img {
 	grid-template-rows: repeat(1);
 	text-align: center;
 	padding-left: 25px;
-
 }
 
 .hours {
@@ -593,6 +592,10 @@ img {
 
 	.search {
 		display: flex;
+	}
+
+	header div .im-menu{
+		display:none;
 	}
 
 	/* Services */
@@ -699,8 +702,8 @@ img {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-}
 
+}
 /* -------------------------------
     		 Mobile Style
 ---------------------------------- */
@@ -717,15 +720,24 @@ img {
 	.nav,
 	.banner-text,
 	.bookbtn,
-	.search {
-		visibility: hidden;
+	.inputexample {
+		display: none;
 	}
 
-	.logo{
-		display: block;
-
+	#login {
+		display: none;
 	}
 
 
+	.top {
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		padding: 30px;
+	}
+
+	header div .im-menu{
+		align-self: center;
+		}
 
 }
