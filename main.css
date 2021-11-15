@@ -152,7 +152,7 @@ body {
 	max-width: 100%
 }
 
-main{
+main {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -252,6 +252,15 @@ i {
 	padding-right: 5px;
 }
 
+.bannerabout h1,
+.bannercontact h1 {
+	color: black;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+
 /* text */
 
 
@@ -335,14 +344,41 @@ input {
 
 }
 
-/* banner*/
+.nav-content {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* banner home page*/
 
 .banner {
 	background: rgb(0, 0, 0) url("images/homebanner.jpg") no-repeat;
 	background-size: cover;
-	height: 300px;
+	background-position: 0px -200px;
+	height: 400px;
 	width: auto;
 }
+
+/* banner about page */
+
+.bannerabout {
+	background: rgb(0, 0, 0) url("images/aboutbanner.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: auto;
+}
+
+/* banner contact page */
+
+.bannercontact {
+	background: rgb(0, 0, 0) url("images/contactbanner.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: auto;
+}
+
 
 .bannercontent {
 	height: 300px;
@@ -602,8 +638,8 @@ img {
 		display: flex;
 	}
 
-	header div .im-menu{
-		display:none;
+	header div .im-menu {
+		display: none;
 	}
 
 	/* Services */
@@ -712,13 +748,14 @@ img {
 	}
 
 }
+
 /* -------------------------------
     		 Mobile Style
 ---------------------------------- */
 
 @media screen and (max-width: 760px) {
 	html {
-		font-size: 22px;
+		font-size: 18px;
 		max-width: 100%
 	}
 
@@ -744,14 +781,15 @@ img {
 		padding: 30px;
 	}
 
-	header div .im-menu{
+	header div .im-menu {
 		align-self: center;
-		}
+	}
 
 
-header img {
-	align-items: center;
-	align-self: center;
-}
+	header img {
+		align-items: center;
+		align-self: center;
+	}
+
 
 }
