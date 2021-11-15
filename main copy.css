@@ -137,9 +137,7 @@ table {
 /* CSS RESET END */
 
 html {
-	font-family: aileron, sans-serif;
-	font-weight: 100;
-	font-style: normal;
+	font-family: 'Aileron Black', sans-serif;
 	font-size: 22px;
 	box-sizing: border-box;
 	color: black;
@@ -149,14 +147,7 @@ body {
 	line-height: 1.5;
 	background-color: rgb(246, 236, 236);
 	margin: 0 auto;
-	max-width: 100%
-}
-
-main {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	height: auto;
+	width: 1200px;
 }
 
 *,
@@ -184,7 +175,7 @@ nav a:hover {
 	transition: all 0.2s ease-out;
 }
 
-/* text */
+/* Header and text style */
 
 h1,
 h2,
@@ -247,29 +238,15 @@ nav a {
 	font-size: 1.2rem;
 }
 
-i {
-	padding-left: 5px;
-	padding-right: 5px;
-}
 
-.bannerabout h1,
-.bannercontact h1 {
-	color: black;
-	text-align: center;
-	display: block;
-	margin: auto;
-	padding-top: 100px;
-}
-
-/* text */
+/* Header and text style */
 
 
 
 /* HEADER */
 
 header {
-	max-width: 100%;
-	height: auto;
+	width: 100%;
 }
 
 .top {
@@ -321,10 +298,6 @@ i {
 	color: black;
 }
 
-#contacthcinfo i {
-	color: black;
-}
-
 nav ul li a,
 nav ul li a:link,
 nav ul li a:visited {
@@ -348,41 +321,14 @@ input {
 
 }
 
-.nav-content {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-/* banner home page*/
+/* banner*/
 
 .banner {
 	background: rgb(0, 0, 0) url("images/homebanner.jpg") no-repeat;
 	background-size: cover;
-	background-position: 0px -200px;
-	height: 400px;
+	height: 300px;
 	width: auto;
 }
-
-/* banner about page */
-
-.bannerabout {
-	background: rgb(0, 0, 0) url("images/aboutbanner.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 400px;
-	width: auto;
-}
-
-/* banner contact page */
-
-.bannercontact {
-	background: rgb(0, 0, 0) url("images/contactbanner.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 400px;
-	width: auto;
-}
-
 
 .bannercontent {
 	height: 300px;
@@ -408,8 +354,8 @@ input {
 
 }
 
-.book-button:hover {
-	transform: scaleY(1.2);
+.book-button:hover{
+transform: scaleY(1.2);
 }
 
 .bannercontent {
@@ -462,7 +408,6 @@ input {
 img {
 	width: 100%;
 }
-
 
 .servicescontent {
 
@@ -536,40 +481,48 @@ img {
 
 
 #promem {
+	background-color: rgb(79, 152, 125);
 	width: 100%;
 	height: auto;
-	text-align: center;
-}
-
-#promem img {
-	width: 150px;
-	height: 150px;
-}
-
-.promotions {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	text-align: center;
-	background-color: rgb(79, 152, 125);
-	padding: 10px;
-}
-
-.membership {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	text-align: center;
-	background-color: rgb(79, 152, 125);
-	padding: 15px;
-	margin-top: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2);
+	justify-content: center;
+	align-content: center;
 }
 
 .promotionstext {
-	align-self: center;
+	grid-area: one;
+}
+
+.icon1 {
+	grid-area: two;
 }
 
 .membershiptext {
-	align-self: center;
+	grid-area: tree;
 }
+
+.icon2 {
+	grid-area: four;
+}
+
+#promem {
+	grid-template-areas: "one two"
+		"tree four"
+}
+
+#promem img {
+	width: 120px;
+	height: 120px;
+}
+
+.promotions {
+	margin: 10px;
+
+}
+
+.membership {}
 
 /* Hours Contact */
 
@@ -579,7 +532,7 @@ img {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(1);
-	text-align: center;
+	text-align: start;
 	padding-left: 25px;
 }
 
@@ -590,36 +543,33 @@ img {
 
 .contact {
 	grid-area: message;
-
 }
+
 
 #hcinfo {
 	grid-template-areas: "hours"
 		"message"
 }
 
-/* Contact Page -Hours Social Media Contact */
-
-
-
 
 /* FOOTER */
 
 .footer {
 	background-color: black;
-	text-align: center;
-	padding bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+	align-self: center;
 }
 
-.socialicons i {
-	padding-top: 10px;
-	font-size: 25px;
-
+.socialicons {
+	padding: 10px;
 }
 
 
 /* -------------------------------
-     	 Desktop Style
+      Desktop Style
 ---------------------------------- */
 @media screen and (min-width: 760px) {
 	html {
@@ -627,7 +577,7 @@ img {
 	}
 
 	body {
-		max-width: 100%;
+		max-width: 1200px;
 		margin: 0 auto;
 		padding: 1em;
 	}
@@ -641,10 +591,6 @@ img {
 
 	.search {
 		display: flex;
-	}
-
-	header div .im-menu {
-		display: none;
 	}
 
 	/* Services */
@@ -701,20 +647,8 @@ img {
 		height: 380px;
 	}
 
-	/* Promotion Membership */
-	#promem {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
+	/* Promotion Memebership */
 
-	.promotions {
-		margin-right: 10px;
-	}
-
-	.membership {
-		margin-left: 10px;
-		margin-top: 0;
-	}
 
 	/* Hours Contact */
 
@@ -739,102 +673,5 @@ img {
 
 	#hcinfo {
 		grid-template-areas: "hours message"
+
 	}
-
-	/* Contact Page -Hours Social Media Contact */
-
-	#contacthcinfo {
-		width: 100%;
-		height: auto;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(1);
-		text-align: start;
-		padding-left: 25px;
-	}
-
-	.hours {
-		grid-area: hours;
-	}
-
-	.socialmedia {
-		grid-area: social;
-	}
-
-	.contact {
-		grid-area: contact;
-	}
-
-
-	#contacthcinfo {
-		grid-template-areas: "hours  social contact"
-	}
-
-
-
-	/* FOOTER */
-
-	.footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		align-self: center;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-}
-
-/* -------------------------------
-    		 Mobile Style
----------------------------------- */
-
-@media screen and (max-width: 760px) {
-	html {
-		font-size: 18px;
-		max-width: 100%
-	}
-
-	.hours,
-	.socialmedia {
-		border-bottom: 2.3px solid black;
-	}
-
-	.nav,
-	.banner-text,
-	.bookbtn,
-	.inputexample {
-		display: none;
-	}
-
-	#login {
-		display: none;
-	}
-
-
-	.top {
-		display: flex;
-		justify-content: space-between;
-		padding: 30px;
-	}
-
-	header div .im-menu {
-		align-self: center;
-	}
-
-
-	header img {
-		align-items: center;
-		align-self: center;
-	}
-
-
-	/* Contact Page -Hours Social Media Contact */
-	#contacthcinfo {
-		width: 100%;
-		height: auto;
-		text-align:center;
-		padding-left: 25px;
-	}
-
-}
