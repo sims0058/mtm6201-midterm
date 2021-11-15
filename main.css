@@ -423,6 +423,7 @@ input {
 
 
 
+
 /* HEADER */
 
 /* button */
@@ -437,8 +438,6 @@ input {
 	font-size: 16px;
 	cursor: pointer;
 }
-
-
 
 
 /* SERVICES BOXES */
@@ -598,9 +597,74 @@ img {
 		"message"
 }
 
-/* Contact Page -Hours Social Media Contact */
+/* Contact Page Form and Location */
+.contactform,
+.location {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 20%;
+	align-self: center;
+}
 
+.contact-me {
+	width: 80%;
+	height: 80px;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
 
+.contact-item {
+	width: 80%;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #575159;
+	padding-top: 20px;
+}
+
+.contact-box {
+	width: 80%;
+	height: 55px;
+	border-radius: 5px;
+	border: solid 2px #b6b5b7;
+	background-color: #fffefe;
+}
+
+.contact-reason {
+	width: 80%;
+	padding-top: 20px;
+}
+
+.contact-reason-box {
+	width: 80%;
+	height: 248px;
+	border-radius: 5px;
+	border: solid 2px #b6b5b7;
+	background-color: #fffefe;
+}
+
+::placeholder {
+	width: 80%;
+	height: 24px;
+	color: #b8b8b8;
+}
+
+.contact-button {
+	display: block;
+	align-self: center;
+	margin-top: 15px;
+}
+
+.contactform i,
+.location i {
+	color: black;
+}
+
+.location {
+	margin-bottom: 15px;
+}
 
 
 /* FOOTER */
@@ -753,23 +817,22 @@ img {
 		padding-left: 25px;
 	}
 
-	.hours {
-		grid-area: hours;
+	.chours {
+		grid-area: chours;
 	}
 
-	.socialmedia {
-		grid-area: social;
+	.csocialmedia {
+		grid-area: csocial;
 	}
 
-	.contact {
-		grid-area: contact;
+	.ccontact {
+		grid-area: ccontact;
 	}
 
 
 	#contacthcinfo {
-		grid-template-areas: "hours  social contact"
+		grid-template-areas: "chours  csocial ccontact"
 	}
-
 
 
 	/* FOOTER */
@@ -833,7 +896,7 @@ img {
 	#contacthcinfo {
 		width: 100%;
 		height: auto;
-		text-align:center;
+		text-align: center;
 		padding-left: 25px;
 	}
 
