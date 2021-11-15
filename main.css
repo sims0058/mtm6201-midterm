@@ -261,7 +261,16 @@ i {
 	padding-top: 100px;
 }
 
-/* text */
+.mainheader,
+.hours-title,
+.social-title,
+.contact-title,
+.contactmessageheader,
+.location {
+	font-family: 'Advent Pro', sans-serif;
+}
+
+/* text end */
 
 
 
@@ -420,7 +429,6 @@ input {
 
 	background-color: rgb(224, 202, 192);
 }
-
 
 
 
@@ -658,13 +666,43 @@ img {
 }
 
 .contactform i,
-.location i {
+.location i,
+.acontact i {
 	color: black;
 }
+
 
 .location {
 	margin-bottom: 15px;
 }
+
+/* ABOUT PAGE */
+
+.whoheading,
+.whyheading,
+.policiesheader {
+	background-color: rgb(79, 152, 125);
+	color: white;
+	align-self: center;
+	text-align: center;
+}
+
+.whotext,
+.whytext {
+	background-color: rgb(224, 202, 192);
+	padding: 15px;
+}
+
+.productbutton,
+.safetybutton {
+	margin: 1rem;
+}
+
+.aboutbutton {
+	align-self: center;
+	text-align: center;
+}
+
 
 
 /* FOOTER */
@@ -834,6 +872,69 @@ img {
 		grid-template-areas: "chours  csocial ccontact"
 	}
 
+	/* ABOUT PAGE */
+	.aboutbutton {
+		display: flex;
+	}
+
+	/* about main header */
+
+	.mainheader{
+		text-align: center;
+		font-weight: bold;
+		
+	}
+
+	/* about content grid */
+
+	.aboutcontent {
+		width: 100%;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2);
+	}
+
+	.whoimage {
+		grid-area: imgwho;
+
+	}
+
+	.boxwho {
+		grid-area: who;
+		background-color: rgb(224, 202, 192);
+
+	}
+
+	.whyimage {
+		grid-area: imgwhy;
+	}
+
+	.boxwhy {
+		grid-area: why;
+		background-color: rgb(224, 202, 192);
+	}
+
+
+	.aboutcontent {
+		grid-template-areas: "imgwho who"
+			"why imgwhy"
+	}
+
+	.whoheading,
+	.whyheading {
+		display: flex;
+		text-align: center;
+		padding-left: 30px;
+	}
+
+	/* about policies grid */
+
+	.policies {
+		display: flex;
+	}
+
+
 
 	/* FOOTER */
 
@@ -899,5 +1000,20 @@ img {
 		text-align: center;
 		padding-left: 25px;
 	}
+
+
+	/* About Page */
+	.policies {
+		display: none;
+	}
+
+	.aboutbutton {
+		display: block;
+	}
+
+
+
+
+
 
 }
