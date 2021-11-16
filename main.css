@@ -367,7 +367,7 @@ input {
 .banner {
 	background: rgb(0, 0, 0) url("images/homebanner.jpg") no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position:center;
 	height: 400px;
 	width: auto;
 }
@@ -408,12 +408,15 @@ input {
 .banner-text {
 	grid-area: text;
 	align-self: center;
+	margin-top: 130px;
+	margin-left: 50px;
 }
 
 .book-button {
 	grid-area: button;
 	align-self: center;
 	margin: auto;
+	margin-top: 150px;
 
 }
 
