@@ -604,6 +604,17 @@ img {
 	grid-template-areas: "hours"
 		"message"
 }
+  /* icon transform */
+.icon1,
+.icon2{
+	transform: rotate(0deg);
+	transition: transform 1s;
+  }
+
+  .icon1:hover,
+  .icon2:hover{
+    transform: rotate(360deg);
+}
 
 /* Contact Page Form and Location */
 .contactform,
@@ -613,6 +624,7 @@ img {
 	margin-left: 20%;
 	align-self: center;
 }
+
 
 .contact-me {
 	width: 80%;
