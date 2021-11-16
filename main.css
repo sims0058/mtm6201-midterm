@@ -522,8 +522,13 @@ img {
 		"seven eight"
 
 }
-
-
+/* Services h3 scale */
+.servicescontent h3{
+	transition: all .2s ease-in-out;
+}
+.servicescontent h3:hover{
+	transform: scale(1.3);
+}
 
 /* Special Packages */
 
@@ -537,6 +542,9 @@ img {
 	margin-bottom: 23px;
 	line-height: 12pt;
 }
+
+
+
 
 
 /* Promotion Membership */
