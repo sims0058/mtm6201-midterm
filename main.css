@@ -367,7 +367,7 @@ input {
 .banner {
 	background: rgb(0, 0, 0) url("images/homebanner.jpg") no-repeat;
 	background-size: cover;
-	background-position: 0px -200px;
+	background-position: center;
 	height: 400px;
 	width: auto;
 }
