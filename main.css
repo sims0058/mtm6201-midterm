@@ -547,10 +547,10 @@ img {
 	line-height: 12pt;
 }
 
-.anibox{
+.anibox:hover{
 	background-color: rgb(224, 202, 192);
 	animation-name: boxanim;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-iteration-count: infinite;
 
   }
@@ -558,8 +558,9 @@ img {
   @keyframes boxanim {
 	0%   {background-color: rgb(202, 169, 153);}
 	25%  {background-color: rgb(172, 124, 101);}
-	50%  {background-color: rgb(168, 109, 82);}
-	100% {background-color: rgb(136, 95, 75);}
+	45%  {background-color: rgb(175, 120, 94);}
+	65% {background-color: rgb(136, 96, 75);}
+	100% {background-color: rgb(212, 177, 161);}
 }
 
 /* Promotion Membership */
